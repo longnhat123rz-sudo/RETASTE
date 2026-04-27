@@ -81,12 +81,14 @@ function Register() {
 
         const userData = loginResponse.data.data.user;
         const token = loginResponse.data.data.token;
+        const role = userData.role;
 
         // Save to AuthContext
         login(userData);
 
         // Save token
         setAuthToken(token);
+        localStorage.setItem("retaste_user_role", role);
         localStorage.setItem("retaste_token", token);
 
         navigate("/menu");

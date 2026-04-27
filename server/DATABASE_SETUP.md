@@ -26,7 +26,7 @@ Chỉnh sửa `.env`:
 ```
 MYSQL_HOST=127.0.0.1
 MYSQL_USER=root
-MYSQL_PASSWORD=admin123
+MYSQL_PASSWORD=123456
 MYSQL_DATABASE=retaste
 MONGO_URI=mongodb://127.0.0.1:27017/retaste
 JWT_SECRET=your_jwt_secret_here
